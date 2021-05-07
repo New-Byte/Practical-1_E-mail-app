@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Getmail</title>
+</head>
+</html>
+<h1 align="center">Inbox</h1>
+{% for x in data %}
+	Subject: {{x.0}}<br>
+	To: {{x.1}}<br>
+	From: {{x.2}}<br>
+	Date: {{x.3}}<br>
+	Mail: {{x.4}}<br><hr>
+{% endfor %}
